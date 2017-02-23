@@ -1,0 +1,37 @@
+<?php
+	$jquery_version = '1.11.2';
+	$google_analytics_account = 'UA-47554543-1';
+
+	$person_email_field = 'email';
+	
+	// encrypt key - for use with the encrypt/decrypt functions
+	$sky_encryption_key = 'fsm!@#$%^&*';
+
+	$db_domain   = 'localhost';
+	$db_driver   = 'mysql';
+	$db_name     = 'fsm_db';
+    $db_username = 'fsm_user';
+    $db_password = 'fsm!@#';
+
+	define('MYSQL','Y-m-d H:i:s');
+	
+	define('LIMIT',50);
+	define('DATE_FORMAT','D M jS, Y');
+	define('TIME_FORMAT','g:ia');
+	define('DATE_TIME','m/d/y g:ia');
+	define('PUB_TIME','D, j F Y h:i:s e'); // Sun, 19 May 2002 15:21:36 GMT
+	define('YMD','Y-m-d');
+	define('MDY','m/d/Y');
+	define('STATUS',serialize(array('New','Open','Settled','Closed',86=>'Trash')));
+	
+	// TWITTER
+	define('CONSUMER_KEY', '5BpNsQlEYGqgohjfSeQby8reo');
+	define('CONSUMER_SECRET', 'BAgaB8TsbD6iNyKrVyS4ESpd2MNF0IivVuAkzewdpZdAxtgvi9');
+	define('OAUTH_CALLBACK', 'http://zrosenberg.com/oauth');
+	
+	$memcache_settings = array(
+		'redundancy' => 1,
+		'servers' => array(
+			array('host' => 'localhost')
+		)
+	);

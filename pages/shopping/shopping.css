@@ -1,0 +1,174 @@
+/* CSS Document */
+
+@media (max-width: 768px) {
+
+	.similar {
+		display: none;
+	}
+	.circle-number {
+		width: 40px;
+		height: 40px;
+		border-radius: 40px;
+		font-size: 18px;
+		line-height: 40px;
+		top: -20px;
+		margin-left: -20px;
+	}
+	.brand-price {
+		margin-top: 10px;
+	}
+	.info {
+		font-size: 16px;
+		margin-bottom: 40px;
+	}
+
+}
+
+@media(min-width:768px) and (max-width:992px) {
+	.shopping .description {
+		font-size: 9px;	
+	}
+	.similar {
+		display: none;
+	}
+
+	.brand-price {
+		margin-top: 14px;
+	}
+	
+	.circle-number {
+		width: 24px;
+		height: 24px;
+		border-radius: 24px;
+		font-size: 10px;
+		line-height: 22px;
+		top: -27px;
+		margin-left: -12px;
+	}
+}
+
+@media(min-width:992px) {
+	.circle-number {
+		width: 40px;
+		height: 40px;
+		border-radius: 40px;
+		font-size: 18px;
+		line-height: 40px;
+		top: -20px;
+		margin-left: -20px;
+	}
+
+	.brand-price {
+		margin-top: 30px;
+	}
+}
+
+.small-caps {
+	font-variant: small-caps;
+	font-family: "MS Serif", "New York", serif;
+}
+
+.header-text {
+	color: #646569;
+}
+
+.mainTrend {
+	display: table;
+	padding: 15px 0; 
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	margin-top: 30px;
+}
+
+.mainTrend.skirt {
+	border-bottom: none;
+}
+
+.mainTrend .panel {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.would-you {
+	text-align: center;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;	
+	padding: 0 35px;
+	color: #636468;
+}
+.would-you strong {
+	color: #000;
+}
+
+.circle-arrow {
+	position: absolute;
+	top: 50%;
+	margin-top: -13px;
+	right: -13px;
+	border: 1px solid #000;
+	border-radius: 26px;
+	padding: 5px 6px;
+	z-index: 100;
+	background: #FFF;
+}
+
+.votes .vote-button {
+	cursor: pointer;
+	display: inline-block !important;
+}
+
+.shopping img {
+	margin: 15px auto 0;
+}
+
+.circle-number {
+	position: absolute;
+	border: 3px double #ccc;
+	text-align: center;
+	left: 50%;
+	background: #fff;
+}
+
+.shopping.skirt .brand-price {
+	display: block;
+}
+
+.shopping.skirt .description {
+	color: #969799;
+	text-align: center;
+}
+
+.shopping {
+	font-size: 12px;
+}
+
+.row.header {
+	margin-top: 30px;
+}
+
+.similar {
+	position: absolute;
+	font-size: 11px;
+	color: #101011 !important;
+	text-align: center;
+	width: 200px;
+	font-weight: bold;
+}
+.similar:hover {
+	text-decoration: none;
+}
+
+.similar img {
+	display: block;
+}
+
+#most-similar {
+	top: 100px;
+	left: -100px;
+}
+
+#least-similar {
+	top: 130px;
+	left: 110px;
+}

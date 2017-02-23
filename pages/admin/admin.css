@@ -1,0 +1,13 @@
+.glyphicon {
+	font-size: 18px;
+}
+a.admin {
+	color: #000;
+}
+a.admin:hover {
+	text-decoration: none;
+}
+
+.overview img {
+  display: inline-block;
+}

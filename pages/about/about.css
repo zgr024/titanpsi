@@ -1,0 +1,118 @@
+/* CSS Document */
+
+@media (max-width: 992px) {
+	.form-group {
+		padding: 0 30px;
+	}
+
+	#submit {
+		margin-right: 30px;
+	}
+
+	.size20 {
+		font-size: 18.5px;
+	}
+}
+@media (min-width: 993px) {
+
+	.size20 {
+		font-size: 20px;
+	}
+}
+
+h2 {
+	font-size: 30px;
+}
+
+em {
+	font-style: italic;
+}
+
+.black {
+	color: #000 !important;
+}
+
+
+.how-to-use-link {
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+.pad10 {
+	margin: 20px 0;
+	padding: 14px 0 8px;
+}
+
+.border {
+	border-top: 1px solid #bcbcbe;
+	border-bottom: 1px solid #bcbcbe;
+}
+
+a#goto-contact:hover {
+	text-decoration: none;
+}
+p {
+	margin: 15px 0;
+	font-family: 'Baskerville' !important;
+	color: #666 !important;
+}
+
+form#contact-us {
+	background: #e8e8e9;
+	box-shadow: 4px 4px 1px #a4a3a3;
+	-webkit-box-shadow: 4px 4px 1px #a4a3a3;
+	position:relative;
+	padding: 60px 0 40px;
+	margin: 40px 0;
+}
+
+#contact-us label {
+	margin-bottom: 0px !important;
+	font-size: 18px;
+	font-family: 'Baskerville';
+	font-style: italic;
+}
+
+
+#contact-us legend {
+	position: absolute;
+	top: -25px;
+	left: 50%;
+	margin-left: -113px;
+	font-size: 22px;
+	background: #fff;
+	border: 3px double #8a8989;
+	height: 49px;
+	line-height: 48px;
+	text-align: center;
+	width: 226px;
+}
+
+#contact-us textarea {
+	height: 182px !important;
+}
+
+#submit {
+	width: 208px;
+	height: 74px;
+	background-image:url(/images/icons/submit-bg.png);
+	position: relative;
+}
+#submit span {
+	position: absolute;
+	bottom: 18px;
+	right: 36px;
+	font-size: 18px;
+	cursor: pointer;
+}
+#submit span:hover {
+	color: #cf5780;
+}
+#form-submitted {
+	display: none;
+	position: absolute;
+	top: 110px;
+	left: 50%;
+	margin-left: -153px;
+}

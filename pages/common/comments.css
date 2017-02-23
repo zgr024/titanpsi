@@ -1,0 +1,69 @@
+/* CSS Document */
+
+.row.comments {
+	margin-top: 25px;
+}
+
+form#comments {
+	background: #e8e8e9;
+	box-shadow: 4px 4px 1px #a4a3a3;
+	-webkit-box-shadow: 4px 4px 1px #a4a3a3;
+	position:relative;
+	padding: 60px 0 40px;
+	margin: 40px 0;
+}
+
+#comments label {
+	margin-bottom: 0px !important;
+	font-size: 18px;
+	font-family: 'Baskerville';
+	font-style: italic;
+}
+
+
+#comments legend {
+	position: absolute;
+	top: -27px;
+	left: 50%;
+	margin-left: -113px;
+	font-size: 25px;
+	background: #fff;
+	border: 3px double #8a8989;
+	height: 54px;
+	line-height: 47px;
+	text-align: center;
+	width: 226px;
+}
+
+#comments textarea {
+	height: 182px !important;
+}
+
+#post-comment {
+	width: 308px;
+	height: 94px;
+	background-image:url(/images/icons/post-comment-bg.png);
+	position: relative;
+}
+#post-comment span {
+	position: absolute;
+	bottom: 26px;
+	right: 46px;
+	font-size: 20px;
+	cursor: pointer;
+}
+#post-comment span:hover {
+	color: #cf5780;
+}
+#form-submitted {
+	display: none;
+	position: absolute;
+	top: 110px;
+	left: 50%;
+	margin-left: -153px;
+}
+#comments #comment-profile {
+	font-size: 20px;
+	margin-bottom:20px;
+	margin-top: -20px;
+}

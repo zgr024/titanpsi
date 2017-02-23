@@ -1,0 +1,20 @@
+#skybox .skybox {
+	background: #FFF;
+	border: 1px solid #767676;
+	border-radius: 7px;
+	padding: 20px;
+}
+.fa-times {
+	color: #333;
+	border-radius: 13px;
+	width: 26px;
+	height: 26px;
+	background: #CCC;
+	text-align: center;
+	line-height: 25px;
+	position: absolute;
+	border: 1px solid #aaa;
+	top: -12px;
+	right: -13px;
+	z-index: 100;
+}

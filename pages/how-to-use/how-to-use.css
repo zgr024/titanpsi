@@ -1,0 +1,80 @@
+.text12 {
+	font-size: 12px;
+}
+
+.small-caps {
+	font-size: 13px;
+}
+
+p.lower-p {
+	margin-top: 20px;
+}
+
+.bubble {
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	background: #1c1c20;
+	color: #ddd;
+	margin: 10px auto;
+	display: table;
+	text-align: center;
+	position: relative;
+}
+
+.bubble span {
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+	width: 50px;
+}
+
+
+.bubble-triangle {
+	position: absolute;
+	margin-top: -24px;
+	margin-left: 188px;
+	width: 24px;
+	height: 27px;
+	background: url(/images/icons/bubble-triangle.png) no-repeat;
+}
+
+img.arrow,
+img.logo,
+img.icon {
+	margin: 10px auto;
+	display: block;
+}
+
+img.right-arrow {
+	margin-left: 90px !important;
+}
+
+img.left-arrow {
+	margin-left: 70px !important;
+}
+
+.box {
+	padding: 10px;
+}
+.box-border {
+	border: 3px double #767676;
+	height: 130px;
+}
+
+.red-col {
+	padding-left: 10px;
+	padding-right:10px;
+}
+
+.red-col {
+	padding-left: 10px;
+	padding-right: 10px;
+} 
+
+.red-box {
+	height: 100px
+}
+.red {
+	color: #aa0000;
+}

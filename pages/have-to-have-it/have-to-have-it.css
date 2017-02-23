@@ -1,0 +1,198 @@
+/* CSS Document */
+
+@media (max-width: 768px) {
+	
+	.leftBubble, .rightBubble {
+		width: 90px;
+		height: 90px;
+		max-height: 90px;
+		max-width: 90px;
+		border-radius: 100%;
+		border: 1px solid #ccc;
+		display: table;
+		vertical-align: middle; 
+		position: absolute;
+		background: #fff;
+		text-align: center;
+		opacity: 0.8;
+		margin-top: -72px;
+		padding: 0 10px;
+	}
+	
+	.leftBubble span, .rightBubble span {
+		display: table-cell;
+		vertical-align: middle;
+		font-size: 8px;
+		width: 80px;
+		height: 80px;
+	}
+	
+	.leftBubble {
+		left: -10px;
+	}
+	
+	.rightBubble {
+		right: -10px;
+	}
+
+}
+
+@media(min-width:768px) and (max-width:992px) {
+	
+	.leftBubble, .rightBubble {
+		width: 110px;
+		height: 110px;
+		max-height: 110px;
+		max-width: 110px;
+		border-radius: 100%;
+		border: 1px solid #ccc;
+		display: table;
+		vertical-align: middle; 
+		position: absolute;
+		background: #fff;
+		text-align: center;
+		opacity: 0.8;
+		margin-top: -72px;
+		padding: 0 10px;
+	}
+	
+	.leftBubble span, .rightBubble span {
+		display: table-cell;
+		vertical-align: middle;
+		font-size: 10px;
+		width: 100px;
+		height: 100px;
+	}
+	
+	.leftBubble {
+		left: -18px;
+	}
+	
+	.rightBubble {
+		right: -18px;
+	}
+}
+
+@media(min-width:992px) {
+	
+	.leftBubble, .rightBubble {
+		width: 150px;
+		height: 150px;
+		max-height: 150px;
+		max-width: 150px;
+		border-radius: 100%;
+		border: 1px solid #ccc;
+		display: table;
+		vertical-align: middle; 
+		position: absolute;
+		background: #fff;
+		text-align: center;
+		opacity: 0.8;
+		margin-top: -72px;
+		padding: 0 15px;
+	}
+	
+	.leftBubble span, .rightBubble span {
+		display: table-cell;
+		vertical-align: middle;
+		font-size: 12px;
+		width: 110px;
+		height: 110px;
+	}
+	
+	.leftBubble {
+		left: -25px;
+	}
+	
+	.rightBubble {
+		right: -25px;
+	}
+
+	
+}
+
+
+.why {
+	color: #666;
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: normal;
+}
+
+.have-to {
+	margin: 30px 0;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+
+.have-to-article {
+	margin-top: 20px;
+}
+
+/*.leftBubble:before {
+	top: 61px;
+	bottom: auto;
+	left: auto;
+	right: -23px;
+	border-width: 10px 0 10px 24px;
+	border-color: transparent #454548;
+	content: "";
+	position: absolute;
+	border-style: solid;
+	display: block;
+	width: 0;
+}
+
+
+.leftBubble:after {
+	top: 62px;
+	bottom: auto;
+	left: auto;
+	right: -20px;
+	border-width: 9px 0px 9px 21px;
+	border-color: transparent #fff;
+	content: "";
+	position: absolute;
+	border-style: solid;
+	display: block;
+	width: 0;
+}
+
+/*
+.rightBubble:before {
+	content: "";
+	position: absolute;
+	border-width: 13px 13px 0;
+	border-style: solid;
+	display: block;
+	width: 0;
+	top: 61px;
+	bottom: auto;
+	left: -23px;
+	border-width: 10px 24px 10px 0;
+	border-color: transparent #454548;
+}
+
+
+.rightBubble:after {
+	content: "";
+	position: absolute;
+	border-width: 13px 13px 0;
+	border-style: solid;
+	border-color: #fff transparent;
+	display: block;
+	width: 0;
+	top: 62px;
+	bottom: auto;
+	left: -20px;
+	border-width: 9px 21px 9px 0;
+	border-color: transparent #fff;
+}
+*/
+.description {
+	font-size: 11px;
+}
+.price, .link {
+	font-weight: normal;
+}

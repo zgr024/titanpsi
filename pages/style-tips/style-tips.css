@@ -1,0 +1,77 @@
+/* CSS Document */
+
+.style-tip {
+	margin: 20px 0;
+}
+
+.style {
+	padding: 20px 0;
+	margin-top: 30px;
+	/*
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #CCC;
+	*/
+}
+.style-arrow {
+	margin-bottom: 10px;
+}
+.style-title {
+	font-size: 20px;
+	font-weight:bold;
+	line-height: 19px;
+}
+
+.style-desc {
+	line-height: 19px;
+	font-size: 16px;	
+}
+.style-tags {
+	font-size: 12px;
+	line-height: 15px;
+}
+#comments {
+	padding: 20px 0 100px;
+}
+
+.mainTrend {
+	display: table;
+	padding: 15px 0; 
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	margin-top: 30px;
+	border-bottom: none;
+}
+
+.mainTrend .panel {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.would-you {
+	text-align: center;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;	
+	padding: 0 35px;
+	color: #636468;
+}
+.would-you strong {
+	color: #000;
+}
+
+.circle-arrow {
+	position: absolute;
+	top: 50%;
+	margin-top: -13px;
+	right: -13px;
+	border: 1px solid #000;
+	border-radius: 26px;
+	padding: 5px 6px;
+	z-index: 100;
+	background: #FFF;
+}
+
+.votes .vote-button {
+	cursor: pointer;
+	display: inline-block !important;
+}

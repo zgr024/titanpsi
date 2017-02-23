@@ -1,0 +1,9 @@
+/* CSS Document */
+
+#instafeed {
+	width: 150px;
+	height: 150px;
+}
+#loadButton {
+	cursor: pointer;
+}

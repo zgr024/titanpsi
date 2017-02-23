@@ -1,0 +1,259 @@
+@media(max-width: 768px) {
+	.vote-input {
+		width: 100% !important;
+		margin-bottom: 5px;
+	}
+	
+	h1.page-header {
+		font-size: 26px !important;
+	}
+	
+	.nav-tabs>li>a {
+		margin-top: -10px;
+	}
+}
+
+.uploaderContainer {
+	text-align: left;
+	border: 1px solid #ccc;
+	padding: 20px;
+}
+
+.uploaderContainer img {
+	margin-top: 40px;
+}
+
+.nav-tabs {
+	border-bottom: none !important;
+	position: absolute;
+	right: 70px;
+	top: 26px;
+}
+
+.nav-tabs li:not(.active) {
+	cursor: pointer;
+}
+
+.nav-tabs li.inactive {
+	display: none;
+}
+
+.bubbleInput {
+	width: 76%;
+	margin: 5px 1% 5px 0;
+	display: inline-block;
+}
+
+.shoppingName {
+	width: 68%;
+	display:inline-block;
+	margin-right: 2%;
+}
+
+.styleName {
+	width: 100%;
+	display:inline-block;
+}
+
+.styleDesc {
+	width: 100%;
+	display:inline-block;
+	margin: 5px 0 10px;
+}
+
+.haveToHeader {
+	margin-bottom: 5px;
+}
+
+
+.shoppingPrice {
+	width: 28%;
+	display: inline-block;
+}
+.shoppingLink, .shoppingDesc {
+	margin-top: 5px;
+}
+
+.percent {
+	width: 10%;
+	display: inline-block;
+}
+
+.product {
+	width: 78.5%;
+	display:inline-block;
+	margin: 5px 2% 5px 0;
+}
+
+.price {
+	width: 18%;
+	display: inline-block;
+}
+
+.link {
+	width: 59%;
+	display: inline-block;
+	margin: 5px 2% 5px 0;
+}
+.link_disp {
+	width: 38%;
+	display: inline-block;
+	margin: 5px 0;
+}
+
+
+textarea.form-control {
+	height: 100px;
+}
+
+section {
+	margin-left: 30px;
+}
+
+.vote-input {
+	display: inline-block;
+	width: 18%;
+}
+
+#haveContainer, #blogrollContainer {
+	position: relative;
+	width: 600px;
+}
+#carouselContainer, #otherContainer {
+	max-width: 627px;
+}
+.inputContainer {
+	width: 600px;
+}
+
+.leftBubble, .rightBubble {
+	width: 150px;
+	height: 150px;
+	max-height: 150px;
+	max-width: 150px;
+	border-radius: 100%;
+	border: 1px solid #ccc;
+	display: table;
+	vertical-align: middle; 
+	position: absolute;
+	background: #fff;
+	text-align: center;
+	opacity: 0.8;
+	margin-top: -72px;
+	padding: 0 15px;
+}
+
+.leftBubble span, .rightBubble span {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 12px;
+	width: 110px;
+	height: 110px;
+}
+
+.leftBubble {
+	left: -25px;
+}
+
+.rightBubble {
+	right: -25px;
+}
+
+/*.leftBubble:before {
+	top: 61px;
+	bottom: auto;
+	left: auto;
+	right: -23px;
+	border-width: 10px 0 10px 24px;
+	border-color: transparent #454548;
+	content: "";
+	position: absolute;
+	border-style: solid;
+	display: block;
+	width: 0;
+}
+
+.leftBubble:after {
+	top: 62px;
+	bottom: auto;
+	left: auto;
+	right: -20px;
+	border-width: 9px 0px 9px 21px;
+	border-color: transparent #fff;
+	content: "";
+	position: absolute;
+	border-style: solid;
+	display: block;
+	width: 0;
+}
+
+.rightBubble:before {
+	content: "";
+	position: absolute;
+	border-width: 13px 13px 0;
+	border-style: solid;
+	display: block;
+	width: 0;
+	top: 61px;
+	bottom: auto;
+	left: -23px;
+	border-width: 10px 24px 10px 0;
+	border-color: transparent #454548;
+}
+
+.rightBubble:after {
+	content: "";
+	position: absolute;
+	border-width: 13px 13px 0;
+	border-style: solid;
+	border-color: #fff transparent;
+	display: block;
+	width: 0;
+	top: 62px;
+	bottom: auto;
+	left: -20px;
+	border-width: 9px 21px 9px 0;
+	border-color: transparent #fff;
+}
+*/
+label {
+	display: block;
+}
+
+a.remove{
+	font-size: 18px;
+	margin-top: 5px;
+	cursor: pointer;
+	display: block;
+	float: left;
+}
+a.addItem, a.removeItem {
+	font-size: 26px;
+	cursor: pointer;
+	display: block;
+	float: right;
+	margin-left: 20px;
+}
+
+.imageContainer img {
+	display: block;	
+	margin: 0 auto;
+}
+
+.bigLabel {
+	font-size: 18px;
+	cursor: default;
+	padding-top: 20px;
+	margin-top: 30px;
+	border-top: 3px solid #CCC;
+}
+
+input[type=number]:invalid {
+	border-radius: 4px !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+form#postForm {
+	margin-bottom: 200px;
+}

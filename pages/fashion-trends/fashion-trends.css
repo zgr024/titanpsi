@@ -1,0 +1,206 @@
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display+SC:400,400italic);
+
+.main-tag {
+	border: 3px double #ccc;
+	position: absolute;
+	display: inline-block;
+	background: #FFF;
+	font-weight: 600;
+	letter-spacing: 1px;
+	z-index: 110;
+	top: 15px;
+	left: 0px;
+}
+
+.triangle-l {
+	border-color: rgba(0, 0, 0, 0) #666 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+	border-style: solid;
+	border-width: 15px;
+	height: 0px;
+	width: 0px;
+	position: absolute;
+	left: -14px;
+	z-index: 50;
+}
+
+.circle-arrow {
+	position: absolute;
+	top: 50%;
+	margin-top: -12px;
+	right: -12px;
+	border: 1px solid #000;
+	border-radius: 26px;
+	padding: 5px;
+	z-index: 100;
+	background: #FFF;
+}
+
+.mainTrend:last-of-type {
+	border-bottom: none;
+}
+
+.mainTrend {
+	display: table;
+	font-size: 12px;
+	padding-bottom: 10px;
+    margin-top: 5px;
+}
+
+.mainTrendTag {
+	font-size: 18px;
+	font-weight: 700;
+}
+.mainTrendDescription {
+    color: #666;
+    font-size: 15px;
+    line-height: 16px;
+}
+.slides {
+	position: relative;
+}
+
+.would-you {
+	text-align: center;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;	
+	padding: 0 5px;
+}
+
+.votes .vote-button {
+	cursor: pointer;
+	display: inline-block !important;
+}
+
+.see-more-trends {
+	text-align: center;
+	padding: 12px 0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.post-tag {
+	width: 287px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	margin-top: -10px;
+	z-index: 10;
+    left: 50%;
+    margin-left: -143px;
+}
+.rel {
+    position: relative;
+}
+.post-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.mainTrend .panel {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.slide {
+	margin: 0 auto;
+}
+
+.post-row a {
+	color: #000;
+}
+.post-row a:hover {
+	color: #000;
+	text-decoration: none;
+}
+.row.more {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.main-tag {
+		padding: 0 12px;
+		font-size: 12px;
+		line-height: 19px;
+		height: 22px;
+	}
+
+	.mainTrendTag {
+		font-size: 20px;
+	}
+
+	.mainTrendDescription {
+		font-size: 17px;
+	}
+	
+	.mainTagBorder {
+		border-top: 1px solid #000;
+		margin-top: 10px
+	}
+
+	.downArrow {
+		width: 0; 
+		height: 0; 
+		margin: 0 auto;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 10px solid #000;
+	}
+
+	.mobileFSM {
+		font-size: 17px;
+		font-weight: bold;
+		margin-top: 10px;
+	}
+	
+	.triangle-l {
+		top: 22px;
+	}
+	
+	#slideOverlay, #slideOverlayText {
+		display: none !important;
+	}
+	.votes {
+		padding-bottom: 30px;
+		border-bottom: 1px solid #ccc;
+	}
+
+}
+
+@media(min-width:768px) and (max-width:992px) {
+	.main-tag {
+		padding: 0 21px;
+		font-size: 15px;
+		line-height: 23px;
+		height: 24px;
+	}
+	
+	.triangle-l {
+		top: 23px;
+	}
+	
+	.votes {
+		padding-bottom: 30px;
+		border-bottom: 1px solid #ccc;
+	}
+	
+}
+
+@media(min-width:992px) {
+	.main-tag {
+		padding: 0 21px;
+		font-size: 15.5px;
+		line-height: 31px;
+		height: 36px;
+
+	}
+	
+	.triangle-l {
+		top: 37px;
+	}
+	
+	.mainTrend {
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 30px;
+	}
+}
