@@ -19,13 +19,6 @@
         if ($_COOKIE['pop-up']) $popup = 1;
         else $popup = 0;
 ?>
-        <input type="hidden" id="popup" value="<?=$popup?>" />
-        <input type="hidden" id="sidebarValue" value="<?=$this->sidebar?$this->sidebar:'regular'?>" />
-		<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Khula:400,300,600,700,800' rel='stylesheet' type='text/css'>
-        <link rel="alternate" type="application/rss+xml" title="Flirt Skirt or Marry" href="http://<?=$_SERVER['SERVER_NAME']?>/feed" />
-		<script src="/pages/common/comments.js"></script>
-        <script src="https://apis.google.com/js/api:client.js"></script>
 		<header class="container-fluid hidden-xs">
         	<div class="container">
             	<div class="row">

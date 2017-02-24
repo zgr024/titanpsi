@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0633)https://dashboard.bontact.com/wix/widget.aspx?cacheKiller=1487888298695&compId=comp-ixnnjtl3&deviceType=desktop&height=104&instance=Dnvmd2z1itGMKX13LDMYnwcD85_0-Xghz8kjiphNpns.eyJpbnN0YW5jZUlkIjoiMTE0MDQxYzctYjY4ZS00ZTdiLTgzMGMtNWQxY2Q2MjAxNjAwIiwic2lnbkRhdGUiOiIyMDE3LTAyLTIzVDIyOjE4OjE3LjA3NFoiLCJ1aWQiOm51bGwsImlwQW5kUG9ydCI6Ijk2Ljg4LjE4Mi44NS8zNTQ4NCIsInZlbmRvclByb2R1Y3RJZCI6bnVsbCwiZGVtb01vZGUiOmZhbHNlLCJhaWQiOiIxMjYyZGJmNS0zODE4LTRhZWEtODJmMy1mZjVmMWYyZDhlYjciLCJzaXRlT3duZXJJZCI6IjQwY2E3YTJkLTBkYTgtNDVjMC1iMjVkLWRlNjU3OTU4YmI4ZiJ9&locale=en&pageId=masterPage&viewMode=site&vsi=f79f91d3-374d-4318-9298-6dd776c71496&width=246 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style wix-style="" type="text/css">.Title{ font:normal normal normal 22px/1.4em impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif; } .Menu{ font:normal normal normal 15px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Page-title{ font:normal normal normal 44px/1.4em futura-lt-w01-book,sans-serif; } .Heading-XL{ font:normal normal normal 60px/1.4em futura-lt-w01-book,sans-serif; } .Heading-L{ font:normal normal normal 44px/1.4em futura-lt-w01-book,sans-serif; } .Heading-M{ font:normal normal normal 34px/1.4em futura-lt-w01-book,sans-serif; } .Heading-S{ font:normal normal normal 20px/1.4em futura-lt-w01-light,sans-serif; } .Body-L{ font:normal normal normal 17px/1.4em brandon-grot-w01-light,sans-serif; } .Body-M{ font:normal normal normal 15px/1.4em brandon-grot-w01-light,sans-serif; } .Body-S{ font:normal normal normal 14px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Body-XS{ font:italic normal normal 10px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } }</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>widget</title>
+    
+    <script async="" src="./analytics.js"></script>
+    <script src="./jquery.min.js" type="text/javascript"></script>
+    
+    
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>-->
+    <script src="./angular.min.js"></script>
+    
+    <script type="text/javascript">
+        var fromwix = true;
+        var bontacttestmode = false;
+        //var bontact_language = 'en';
+        var bontactCustomer = '';//
+        var locationRoot = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+
+       
+        var compId;
+        var PlacementWix;
+      
+        $(document).ready(function () {
+           
+           
+            
+        });
+        var idevent;
+        function pagenavigationchange(callback)
+        {
+            idevent=Wix.addEventListener(Wix.Events.PAGE_NAVIGATION_CHANGE, function (data) {
+                callback(data);
+            });
+            Wix.removeEventListener(Wix.Events.PAGE_NAVIGATION_CHANGE, idevent);
+        }
+        
+       
+       //use in Ifarme
+        function hiveContact(data) {
+           /* var infoBon = {
+                emails: {},
+                name: {},
+                phones: {}
+                //, fields:[{ name: "How many guests will attend the event?", value: "2" }, { name: "comments", value: "this event rocks!" }]
+            }
+            if (data.email) {
+                infoBon.emails = [{ email: data.email, tag: 'main' }];
+            }
+            if (data.name) {
+                infoBon.name = { first: data.name };
+            }
+            if (data.phones) {
+                infoBon.phones = [{ phone: data.phone, tag: "mobile" }];
+            }*/
+
+            var activity =
+            {
+                  type: Wix.Activities.Type.CONTACT_CONTACT_FORM,
+                  info: {
+                      emails: [{ email: data.email, tag: "main" }], name: { first: data.name }, phones: [{ phone: "9725456545", tag: "mobile" }], fields:
+                          [{ name: "How many guests will attend the event?", value: "2" }, { name: "comments", value: "this event rocks!" }]
+                  },
+                  details: { additionalInfoUrl: null, summary: "testing tpa contact form" },
+                  contactUpdate: { name: { first: data.name }, emails: [{ tag: "main", email: data.email }] }
+            };
+            var onSuccess = function (d) {
+                console.log("Activity ID: " + d.activityId + ", Contact ID: " + d.contactId)
+            };
+            var onFailure = function (d) {
+                console.log("Failure message:" + d);
+                console.log(d);
+            };
+
+            Wix.Activities.postActivity(activity, onSuccess, onFailure);
+
+            /*$.ajax({
+                'type': 'get',
+                'url': "https://prd-api01-eus.azurewebsites.net/wix/hive/" + Wix.Utils.getInstanceId(),
+                'data': data,
+                'cache': false,
+                'success': function (result) {
+                    console.log("hiveContact completed");
+                    console.log(result);
+                  
+                },
+                'error': function (res) {
+                    console.log('error hiveContact');
+                }
+            });*/
+        }
+        /*function resizeWindow(w, h) {
+            Wix.resizeWindow(w, h, function () { });
+        }*/
+        
+        
+        //use in iframe
+        function widgetReady() {
+            console.log('widgetReady');
+        }
+        function get(name) {
+            if (name = (new RegExp('[?&]' + encodeURIComponent(name) + '=([^&]*)')).exec(location.search))
+                return decodeURIComponent(name[1]);
+        }
+        function save(func, params, callback) {
+
+
+            var compId = Wix.Utils.getOrigCompId();
+
+            $.ajax({
+                'type': 'post',
+                'url': "settingsupdate.aspx?func=" + func,
+                'data': "compId=" + Wix.Utils.getOrigCompId() + "&instance=" + get('instance') + "&" + params,
+                'cache': false,
+                'success': function (result) {
+                    console.log("update setting completed");
+                    var status = $.parseJSON(result);
+                    if (status.status) {
+                        // Wix.Settings.refreshAppByCompIds(compId);
+
+                    }
+                    else {
+                        //$("#loginmessage").text(newSettings.message);
+                    }
+                    callback(status.status);
+                    /*
+                    setParams();
+                    settingsstatus();*/
+                },
+                'error': function (res) {
+                    console.log('error updating data to the app server');
+                }
+            });
+
+        }
+        Element.prototype.remove = function () {
+            this.parentElement.removeChild(this);
+        }
+        NodeList.prototype.remove = HTMLCollection.prototype.remove = function () {
+            for (var i = 0, len = this.length; i < len; i++) {
+                if (this[i] && this[i].parentElement) {
+                    this[i].parentElement.removeChild(this[i]);
+                }
+            }
+        }
+    </script>
+   
+   
+    
+<link type="text/css" rel="stylesheet" href="./languages.css"></head>
+<body ng-app="wixApp" ng-controller="widgetWixCtrl" class="ng-scope">
+    
+    
+
+   
+
+
+<div id="bontact_main_widg" style="position:fixed;z-index: 9999;direction:ltr;" class="bonMain_right"><iframe id="bontact_main_ifrm" src="./saved_resource.html" width="246" frameborder="0" allowtransparency="true" height="104" scrolling="auto" style="position: fixed; right: 0px; bottom: 0px; width: 246px; height: 104px;" qsparams="fromwix=true&amp;referrer=https://www.titanpsi.com/&amp;bontactid=LJCHCADZYNA-VJIFSMAVTL-SIKPFTCJVD-HGBKTCOABQ-FOTREJOPI"></iframe></div></body></html>

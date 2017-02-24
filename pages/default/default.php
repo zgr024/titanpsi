@@ -47,7 +47,7 @@ $this->head[] = '
 
 $this->viewport = 'width=500, initial-scale=1';
 
-$this->template('html5', 'top');
+$this->template('website', 'top');
 
 ?>
     <style type="text/css">
